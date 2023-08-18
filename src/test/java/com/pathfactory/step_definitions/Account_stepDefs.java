@@ -78,6 +78,7 @@ public class Account_stepDefs {
     public void userWritesANewReviewForAProduct() {
         dashboardPage.lumaLogo.click();
         accountPage.product.click();
+        BrowserUtils.waitForVisibility(reviewPage.review,10);
         reviewPage.review.click();
         // Execute the click script
         js.executeScript("arguments[0].click();", reviewPage.rating);

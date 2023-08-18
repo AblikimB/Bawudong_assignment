@@ -26,7 +26,7 @@ Feature: Registered Customers section
     When User placed an <order>
     Then User should see that order under My Orders
 
-
+@wip
   Scenario: Verify new review added to My Product Reviews
     When User writes a new review for a product
     Then User should see that review in My Product Reviews
