@@ -1,4 +1,4 @@
-@smoke
+
 Feature: Sign in to dashboard page
 
   Scenario: Valid Sign in to dashboard page
@@ -13,7 +13,7 @@ Feature: Sign in to dashboard page
     When User attempts to sign in with incorrect credentials
     Then User should see an error message
 
-  @wip
+
   Scenario: Sign Out
 
     Given User is logged in

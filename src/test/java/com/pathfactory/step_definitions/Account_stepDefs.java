@@ -76,6 +76,7 @@ public class Account_stepDefs {
 
     @When("User writes a new review for a product")
     public void userWritesANewReviewForAProduct() {
+        dashboardPage.lumaLogo.click();
         accountPage.product.click();
         reviewPage.review.click();
         // Execute the click script
@@ -97,6 +98,7 @@ public class Account_stepDefs {
     String productName;
     @When("User adds a product to wish list")
     public void userAddsAProductToWishList() {
+        dashboardPage.lumaLogo.click();
         productName = accountPage.productName.getText();
         js.executeScript("arguments[0].click();", accountPage.addToWishList);
     }

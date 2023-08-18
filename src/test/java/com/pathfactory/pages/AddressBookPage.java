@@ -62,9 +62,10 @@ public class AddressBookPage {
 
 
     public void onAddressBookPage(){
-        dashboardPage.onDashboardPage();
-        dashboardPage.customerMenu.click();
-        dashboardPage.myAccount.click();
+//        dashboardPage.onDashboardPage();
+//        dashboardPage.customerMenu.click();
+//        dashboardPage.myAccount.click();
+        accountPage.onAccountPage();
         accountPage.addressBook.click();
     }
 

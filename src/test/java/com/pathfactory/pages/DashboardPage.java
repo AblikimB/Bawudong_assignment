@@ -32,6 +32,9 @@ public class DashboardPage {
     @FindBy(xpath = "//span[starts-with(text(),'Welcome')]")
     public WebElement loggedInMsg;
 
+    @FindBy(xpath = "//a[@aria-label='store logo']//img")
+    public WebElement lumaLogo;
+
 
 
     public void onDashboardPage(){
